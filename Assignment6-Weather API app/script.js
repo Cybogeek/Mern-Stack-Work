@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  const apiKey = "fc65a0940ea994aa000bf6c3eaca17d2"; // Replace with your API key--for testing fc65a0940ea994aa000bf6c3eaca17d2
+  const apiKey = "Your-API-KEY"; // Replace with your API key--for testing fc65a0940ea994aa000bf6c3eaca17d2
   const city = "Mumbai"; // Default city
   const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
