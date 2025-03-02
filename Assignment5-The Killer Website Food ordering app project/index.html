@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Omnifood | Healthy Meals</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-lignt bg-warning">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <span class="logo">
+            <img src="images/logo.png" alt="logo" />
+          </span>
+          Omnifood</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#feedback">Feedback</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="jumbotron d-flex justify-content-center align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1>Healthy Meals Delivered to You</h1>
+            <p>Goodbye junk food. Hello super healthy meals.</p>
+            <button class="btn btn-warning">I’m hungry</button>
+            <button class="btn btn-outline-warning">Show me more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container text-center mt-5" id="features">
+      <div class="row">
+        <div class="mb-4">
+          <h2 class="mb-3">Get food fast — not fast food</h2>
+          <p class="m-3">
+            Hello, we’re Omnifood, your new premium food delivery service. We
+            know you’re always busy. No time for cooking. So let us take care of
+            that, we’re really good at it, we promise!
+          </p>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card p-3 h-100">
+            <i class="bi bi-emoji-heart-eyes fs-1 text-warning"></i>
+            <h4>Get food fast — not fast food</h4>
+            <p class="text-muted text-break lh-base">
+              Never cook again! We really mean that. Our subscription plans
+              include up to 365 days/year coverage. You can also choose to order
+              more flexibly if that's your style.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card p-3 h-100">
+            <i class="bi bi-emoji-heart-eyes fs-1 text-warning"></i>
+            <h4>Ready in 20 minutes</h4>
+            <p class="text-muted text-break lh-base">
+              You're only twenty minutes away from your delicious and super
+              healthy meals delivered right to your home. We work with the best
+              chefs in each town to ensure that you're 100% happy.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card p-3 h-100">
+            <i class="bi bi-award fs-1 text-warning"></i>
+            <h4>Order anything</h4>
+            <p class="text-muted text-break lh-base">
+              We don't limit your creativity, which means you can order whatever
+              you feel like. You can also choose from our menu containing over
+              100 delicious meals. It's up to you!
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card p-3 h-100">
+            <i class="bi bi-emoji-heart-eyes fs-1 text-warning"></i>
+            <h4>100% organic</h4>
+            <p class="text-muted text-break lh-base">
+              All our vegetables are fresh, organic and local. Animals are
+              raised without added hormones or antibiotics. Good for your
+              health, the environment, and it also tastes better!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5" id="gallery">
+      <div class="mb-4">
+        <h2 class="text-center mb-3">Food Gallery</h2>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-3">
+          <div class="gallery-container">
+            <img src="images/1.jpg" class="gallery" />
+            <div class="gallery-text bg-warning">
+              Korean bibimbap with egg and vegetables
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="gallery-container">
+            <img src="images/2.jpg" class="gallery" />
+            <div class="gallery-text bg-warning">
+              Simple italian pizza with cherry tomatoes
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="gallery-container">
+            <img src="images/3.jpg" class="gallery" />
+            <div class="gallery-text bg-warning">
+              Chicken breast steak with vegetables
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="gallery-container">
+            <img src="images/4.jpg" class="gallery" />
+            <div class="gallery-text bg-warning">Autumn pumpkin soup</div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="gallery-container">
+            <img src="images/5.jpg" class="gallery" />
+            <div class="gallery-text bg-warning">
+              Paleo beef steak with vegetables
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="gallery-container">
+            <img src="images/6.jpg" class="gallery" />
+            <div class="gallery-text bg-warning">
+              Healthy baguette with egg and vegetables
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="gallery-container">
+            <img src="images/7.jpg" class="gallery" />
+            <div class="gallery-text bg-warning">
+              Burger with cheddar and bacon
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="gallery-container">
+            <img src="images/8.jpg" class="gallery" />
+            <div class="gallery-text bg-warning">
+              Granola with cherries and strawberries
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container my-5" id="how-it-works">
+      <div class="mb-4">
+        <h2 class="text-center mb-3">How it works ?- Simple as 1, 2, 3</h2>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-6">
+          <div class="app-img">
+            <img
+              src="images/app-iPhone.png"
+              class="rounded mx-auto d-block"
+              alt="app"
+            />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="p-3 justify-content-space-between h-100">
+            <ol>
+              <li class="mb-3 lh-base fs-5">
+                Choose the subscription plan that best fits your needs and sign
+                up today.
+              </li>
+              <li class="mb-3 lh-base fs-5">
+                Order your delicious meal using our mobile app or website. Or
+                you can even call us!
+              </li>
+              <li class="mb-3 lh-base fs-5">
+                Enjoy your meal after less than 20 minutes. See you the next
+                time!
+              </li>
+            </ol>
+            <div class="text-center mx-auto">
+              <img
+                src="images/download-app-android.png"
+                class="img-fluid"
+                alt="download"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5" id="cities">
+      <div class="mb-4">
+        <h2 class="text-center mb-3">We're currently in these cities</h2>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-md-3">
+          <div class="city-container card">
+            <img src="images/lisbon-3.jpg" class="gallery" />
+
+            <div class="my-4">
+              <h4 class="text-center">Lisbon</h4>
+
+              <ul>
+                <li>
+                  <i class="bi bi-globe-americas text-warning"></i> Portugal
+                </li>
+                <li>
+                  <i class="bi bi-person-hearts text-warning"></i> 1600+ happy
+                  eaters
+                </li>
+                <li>
+                  <i class="bi bi-emoji-sunglasses text-warning"></i> 60+ top
+                  chefs
+                </li>
+                <li><i class="bi bi-geo-alt text-warning"></i> @omnifood_lx</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="city-container card">
+            <img src="images/san-francisco.jpg" class="gallery" />
+            <div class="m-4">
+              <h4 class="text-center">San Francisco</h4>
+
+              <ul>
+                <li>
+                  <i class="bi bi-globe-americas text-warning"></i> United
+                  States
+                </li>
+                <li>
+                  <i class="bi bi-person-hearts text-warning"></i> 1600+ happy
+                  eaters
+                </li>
+                <li>
+                  <i class="bi bi-emoji-sunglasses text-warning"></i> 100+ top
+                  chefs
+                </li>
+                <li><i class="bi bi-geo-alt text-warning"></i> @omnifood_sf</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="city-container card">
+            <img src="images/berlin.jpg" class="gallery" />
+            <div class="m-4">
+              <h4 class="text-center">Berlin</h4>
+
+              <ul>
+                <li>
+                  <i class="bi bi-globe-americas text-warning"></i> Germany
+                </li>
+                <li>
+                  <i class="bi bi-person-hearts text-warning"></i> 1600+ happy
+                  eaters
+                </li>
+                <li>
+                  <i class="bi bi-emoji-sunglasses text-warning"></i> 60+ top
+                  chefs
+                </li>
+                <li><i class="bi bi-geo-alt text-warning"></i> @omnifood_be</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="city-container card">
+            <img src="images/london.jpg" class="gallery" />
+            <div class="m-4">
+              <h4 class="text-center">London</h4>
+
+              <ul>
+                <li>
+                  <i class="bi bi-globe-americas text-warning"></i> United
+                  Kingdom
+                </li>
+                <li>
+                  <i class="bi bi-person-hearts text-warning"></i> 1200+ happy
+                  eaters
+                </li>
+                <li>
+                  <i class="bi bi-emoji-sunglasses text-warning"></i> 50+ top
+                  chefs
+                </li>
+                <li><i class="bi bi-geo-alt text-warning"></i> @omnifood_lo</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial p-5 mt-5" id="testimonials">
+      <div class="mb-4">
+        <h2 class="text-center mb-3">What Our Customers Say</h2>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-md-4 p-3">
+          <blockquote class="text-center">
+            "Omnifood is just awesome! I just launched a startup which leaves me
+            with no time for cooking, so Omnifood is a life-saver. Now that I
+            got used to it, I couldn't live without my daily meals!".<br />
+            <span class="customer-img"
+              ><img src="images/customer-1.jpg" alt="Customer 1"
+            /></span>
+            - Alberto Duncan.
+          </blockquote>
+        </div>
+        <div class="col-md-4 p-3">
+          <blockquote class="text-center">
+            "Inexpensive, healthy and great-tasting meals, delivered right to my
+            home. We have lots of food delivery here in Lisbon, but no one comes
+            even close to Omifood. Me and my family are so in love!".<br />
+            <span class="customer-img"
+              ><img src="images/customer-2.jpg" alt="Customer 1"
+            /></span>
+            - Joana Silva.
+          </blockquote>
+        </div>
+        <div class="col-md-4 p-3">
+          <blockquote class="text-center">
+            "I was looking for a quick and easy food delivery service in San
+            Franciso. I tried a lot of them and ended up with Omnifood. Best
+            food delivery service in the Bay Area. Keep up the great work!".<br />
+            <span class="customer-img"
+              ><img src="images/customer-3.jpg" alt="Customer 1"
+            /></span>
+            - Milton Chapman.
+          </blockquote>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid p-5 bg-warning" id="pricing">
+      <div class="mb-4">
+        <h2 class="text-center mb-3 text-white">Start Eating Healthy Today</h2>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-4">
+          <div class="card p-5">
+            <h4 class="text-center">Premium</h4>
+            <h5 class="text-muted fs-3 text-center">$399 per month</h5>
+            <p class="text-muted text-center">All plans include:</p>
+            <ul class="text-muted navbar-nav">
+              <li>
+                <i class="bi bi-check text-warning mx-2 fs-4"></i> That’s only
+                $13.30 per meal
+              </li>
+              <li>
+                <i class="bi bi-check text-warning mx-2 fs-4"></i> 1 meal every
+                day
+              </li>
+              <li>
+                <i class="bi bi-check text-warning mx-2 fs-4"></i> Order 24/7
+              </li>
+              <li>
+                <i class="bi bi-check text-warning mx-2 fs-4"></i> Access to
+                newest creations
+              </li>
+              <li>
+                <i class="bi bi-check text-warning mx-2 fs-4"></i> Free delivery
+              </li>
+            </ul>
+            <button class="btn btn-warning mt-3">Buy Now</button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-5">
+            <h4 class="text-center">Premium</h4>
+            <h5 class="text-muted fs-3 text-center">$149 per month</h5>
+            <p class="text-muted text-center">This plans include:</p>
+            <ul class="text-muted navbar-nav">
+              <li>
+                <i class="bi bi-check text-warning mx-2 fs-4"></i> That’s only
+                $14.90 per meal
+              </li>
+              <li>
+                <i class="bi bi-check text-warning mx-2 fs-4"></i> 1 meal 10
+                days/month
+              </li>
+              <li>
+                <i class="bi bi-check text-warning mx-2 fs-4"></i> Order 24/7
+              </li>
+              <li>
+                <i class="bi bi-check text-warning mx-2 fs-4"></i> Access to
+                newest creations
+              </li>
+              <li>
+                <i class="bi bi-check text-warning mx-2 fs-4"></i> Free delivery
+              </li>
+            </ul>
+            <button class="btn btn-warning mt-3">Buy Now</button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-5">
+            <h4 class="text-center">Starter</h4>
+            <h5 class="text-muted fs-3 text-center">$19 per meal</h5>
+            <p class="text-muted text-center">This plans include:</p>
+            <ul class="text-muted navbar-nav">
+              <li><i class="bi bi-x text-danger mx-2 fs-4"></i>&nbsp;N.A</li>
+              <li><i class="bi bi-check text-warning mx-2 fs-4"></i> 1 meal</li>
+              <li>
+                <i class="bi bi-check text-warning mx-2 fs-4"></i> Order from 8
+                am to 12 pm
+              </li>
+              <li><i class="bi bi-x text-danger mx-2 fs-4"></i>&nbsp;N.A</li>
+              <li>
+                <i class="bi bi-check text-warning mx-2 fs-4"></i> Free delivery
+              </li>
+            </ul>
+            <button class="btn btn-outline-warning mt-3">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5" id="feedback">
+      <div class="mb-4">
+        <h2 class="text-center mb-3">Give Your Feedback</h2>
+      </div>
+      <form class="col-md-6 mx-auto mt-5 px-4">
+        <input
+          type="text"
+          class="form-control mb-3"
+          ,
+          name="name"
+          placeholder="Your Name"
+        />
+        <input
+          type="email"
+          name="email"
+          class="form-control mb-3"
+          placeholder="Your Email"
+        />
+        <textarea
+          class="form-control mb-3"
+          name="feedback"
+          placeholder="Your Feedback"
+        ></textarea>
+        <select
+          class="form-select mb-3"
+          name="find-us"
+          aria-label="Default select example"
+        >
+          <option selected>How did you find us?</option>
+          <option value="google">Google</option>
+          <option value="facebook">Facebook</option>
+          <option value="email">Email Ads</option>
+          <option value="ads">Video Ads</option>
+          <option value="hear">From a Friend</option>
+          <option value="unknown">This is my First Time</option>
+        </select>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value="agree"
+            id="flexCheckChecked"
+            name="terms"
+            checked
+          />
+          <label class="form-check-label" for="flexCheckChecked">
+            I agree to the terms and conditions. Want to know more?
+            <a href="#">Read here</a>
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value="agree"
+            id="flexCheckChecked"
+            name="newsletter"
+          />
+          <label class="form-check-label" for="flexCheckChecked">
+            I Want Weekly newsletter
+          </label>
+        </div>
+        <div class="d-grid gap-2 mt-3">
+          <button type="button" class="btn btn-warning">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <footer class="footer bg-warning text-center text-white p-5 mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="mx-5">
+              <ul class="navbar nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About us</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Press</a></li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">iOS App</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Android App</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="social-icons text-end">
+              <a class="fb-logo" href="#"
+                ><i class="bi bi-facebook fs-3"></i
+              ></a>
+              <a class="tw-logo" href="#"><i class="bi bi-twitter fs-3"></i></a>
+              <a class="in-logo" href="#"
+                ><i class="bi bi-instagram fs-3"></i
+              ></a>
+              <a class="li-logo" href="#"
+                ><i class="bi bi-linkedin fs-3"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div>&copy; 2025 Omnifood. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <script>
+      $(document).ready(function () {
+        // $(".gallery").hover(
+        //   function () {
+        //     $(this).css("transform", "scale(1.1)");
+        //   },
+        //   function () {
+        //     $(this).css("transform", "scale(1)");
+        //   }
+        // );
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

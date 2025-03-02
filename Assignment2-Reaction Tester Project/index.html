@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reaction Tester</title>
+    <style>
+      body {
+        text-align: center;
+        font-family: Arial, sans-serif;
+      }
+      #game-container {
+        position: relative;
+        width: 700px;
+        height: 450px;
+        margin: 20px auto;
+        border: 2px solid black;
+        overflow: hidden;
+        background-color: #f0f0f0;
+      }
+      #target {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        background-color: red;
+        cursor: pointer;
+        border: 1px solid rgb(151, 137, 137);
+        display: none;
+      }
+      #stats {
+        margin-top: 20px;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+      }
+      button:hover {
+        background-color: #45a049;
+        box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      #reaction-time {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Reaction Tester</h1>
+    <p>Click the moving box as quickly as possible!</p>
+    <div id="game-container">
+      <div id="target"></div>
+    </div>
+    <div id="stats">
+      <p>Reaction Time: <span id="reaction-time">0</span> sec</p>
+      <button onclick="startGame()">Start Game</button>
+    </div>
+    <script>
+      let target = document.getElementById("target");
+      let startTime, reactionTime;
+      let gameContainer = document.getElementById("game-container");
+
+      function getRandomPosition() {
+        let maxX = gameContainer.clientWidth - target.clientWidth;
+        let maxY = gameContainer.clientHeight - target.clientHeight;
+        let randomX = Math.floor(Math.random() * maxX);
+        let randomY = Math.floor(Math.random() * maxY);
+        let randomRadii = Math.floor(Math.random() * 50);
+        let randomColor = Math.floor(Math.random() * 16777215).toString(16);
+        return { x: randomX, y: randomY, r: randomRadii, c: randomColor };
+      }
+
+      function moveTarget() {
+        let position = getRandomPosition();
+        target.style.display = "block";
+        target.style.left = position.x + "px";
+        target.style.top = position.y + "px";
+        target.style.borderRadius = position.r + "%";
+        target.style.backgroundColor = "#" + position.c;
+        startTime = new Date().getTime();
+      }
+
+      target.addEventListener("click", function () {
+        reactionTime = new Date().getTime() - startTime;
+        document.getElementById("reaction-time").textContent =
+          reactionTime / 1000;
+        moveTarget();
+      });
+
+      function startGame() {
+        moveTarget();
+      }
+    </script>
+  </body>
+</html>
